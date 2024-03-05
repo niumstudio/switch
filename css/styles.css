@@ -2214,9 +2214,6 @@ div.videoLayer {
   width: 100vw;
   height: 100vh;
   z-index: 10;
-  -webkit-align-self: flex-end;
-  align-self: flex-end;
-  -ms-flex-item-align: end;
 }
 div.videoLayerInContent {
   position: absolute;
