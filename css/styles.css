@@ -2451,6 +2451,12 @@ div.rowPanels span {
     padding-right: 7vw;
   }
 }
+body.chrome div.hideChrome div.wrap {
+  display: none;
+}
+body.chrome div.hideChrome {
+  background-image: url("/images/art/home-placehold@1.5x.png");
+}
 a:link,
 a:visited {
   color: #1a1a1a;
