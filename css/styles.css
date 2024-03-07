@@ -242,7 +242,7 @@ div.content > section > div {
 }
 @media screen and (max-width: 1100px) {
   *.fullH {
-    min-height: 88vh;
+    min-height: 92vh;
   }
 }
 *.largeH {
@@ -863,7 +863,12 @@ div#carouselIndicator > div:first-child > div:first-child {
   }
 }
 .navHeight {
-  height: 12vh;
+  height: 10vh;
+}
+@media screen and (min-width: 750px) and (max-width: 1100px) {
+  .navHeight {
+    height: 8vh;
+  }
 }
 #navMobile {
   position: fixed;
@@ -875,8 +880,7 @@ div#carouselIndicator > div:first-child > div:first-child {
 #navHeader {
   position: fixed;
   z-index: 7000;
-  background-color: rgba(255,255,255,0.9);
-  border-bottom: 1px solid rgba(0,0,0,0.45);
+  background-color: #f00;
   width: 100vw;
   padding-left: 3vw;
   padding-right: 3vw;
@@ -1273,7 +1277,7 @@ div.sec6 h4 {
 @media screen and (max-width: 1100px) {
   div.inpage-content .innerContent {
     padding: 0 7.700000000000001vw 14vw 7.700000000000001vw;
-    padding-top: 15vh;
+    padding-top: 12.5vh;
   }
 }
 div.sec3 {
@@ -1300,7 +1304,7 @@ div.sec3 {
   width: 45px;
   height: 45px;
   padding: 0.2em;
-  font-size: 1.1em;
+  font-size: 1.5em;
   border-radius: 50%;
 }
 .icon.alt {
@@ -2153,8 +2157,6 @@ div.slideTextOverlay {
     height: auto;
     position: relative;
     padding-bottom: 14vw;
-    background-blend-mode: multiply;
-    background: linear-gradient(120deg, #f00, #1a1a1a);
   }
   div.containSlider {
     background-repeat: no-repeat;
@@ -2169,23 +2171,36 @@ div.openingTitle {
 }
 @media screen and (max-width: 750px) {
   div.openingTitle {
-    width: 75vw;
+    width: 100vw;
     margin-left: 0;
     margin-right: 0;
+    padding: 0 7.700000000000001vw 14vw 7.700000000000001vw;
     margin-top: 8vh;
     margin-bottom: 8vh;
+    -webkit-align-self: flex-start;
+    align-self: flex-start;
+    -ms-flex-item-align: start;
   }
 }
 @media screen and (min-width: 750px) {
   div.openingTitle {
-    width: 65vw;
+    width: 50vw;
     margin-left: 0;
     margin-right: 0;
     margin-top: 8vh;
     margin-bottom: 8vh;
   }
 }
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 750px) and (max-width: 1100px) {
+  div.openingTitle {
+    width: 100vw;
+    -webkit-align-self: flex-start;
+    align-self: flex-start;
+    -ms-flex-item-align: start;
+    padding: 7vw 7.700000000000001vw 14vw 7.700000000000001vw;
+  }
+}
+@media screen and (min-width: 1100px) {
   div.openingTitle {
     width: 35vw;
     margin-left: 11vw;
@@ -2467,6 +2482,10 @@ li a:link,
 li a:visited {
   text-decoration: underline;
 }
+#navHeader a:link,
+#navHeader a:visited {
+  color: #fff;
+}
 .activeLink {
   font-weight: 600 !important;
 }
@@ -2708,6 +2727,17 @@ body > footer h6 {
   p {
     margin-bottom: 0.5em;
   }
+}
+@media screen and (min-width: 750px) and (max-width: 1100px) {
+  h1 {
+    font-size: 4em;
+  }
+  h2 {
+    font-size: 3em;
+  }
+}
+a.siteLogo:hover {
+  cursor: pointer;
 }
 @media screen and (min-width: 750px) {
   .secTitle {

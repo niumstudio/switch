@@ -8,7 +8,7 @@
     width: 45px
     height: 45px
     padding:0.2em
-    font-size: 1.1em
+    font-size: 1.5em
     border-radius: 50%
 .icon.alt
     background-color: brand2
@@ -625,8 +625,8 @@ div.slideTextOverlay
         height: auto
         position: relative
         padding-bottom: padXL*2
-        background-blend-mode: multiply
-        background: linear-gradient(120deg, brand1, brand0) 
+        //background-blend-mode: multiply
+        //background: linear-gradient(120deg, brand1, brand0) 
         //background: radial-gradient(circle at center, blackAlp5,blackAlp5,blackAlp5,blackAlp10, blackAlp25 )
     div.containSlider
         //background-image: url(/images/bgs/default-m.jpg)
@@ -645,19 +645,28 @@ div.openingTitle
     padding: 0
 @media phoneRule
     div.openingTitle 
-        width: 75vw
+        width: 100vw
         margin-left: 0
         margin-right: 0
+        padding: 0 padXL*1.1 padXL*2 padXL*1.1
         margin-top: navHeight
         margin-bottom: navHeight
+        align-self: flex-start
+
+
 @media ttrigger
     div.openingTitle 
-        width: 65vw
+        width: 50vw
         margin-left: 0
         margin-right: 0
         margin-top: navHeight
         margin-bottom: navHeight
-@media lgdesktopRule
+@media tabletRule
+    div.openingTitle 
+        width: 100vw
+        align-self: flex-start
+        padding: padXL padXL*1.1 padXL*2 padXL*1.1
+@media dtrigger
     div.openingTitle 
          width: 35vw
          margin-left:marXL
